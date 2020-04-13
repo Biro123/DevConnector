@@ -210,7 +210,7 @@ router.put(
       // add to the FRONT of an existing array
       profile.experience.unshift(newExp);
 
-      await profile.save;
+      await profile.save();
 
       res.json(profile);
     } catch (err) {
